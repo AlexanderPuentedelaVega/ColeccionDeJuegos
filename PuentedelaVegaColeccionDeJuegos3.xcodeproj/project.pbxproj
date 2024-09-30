@@ -14,6 +14,7 @@
 		EE8CA9FA2CAB5D40001D08C1 /* PuentedelaVegaColeccionDeJuegos3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE8CA9F82CAB5D40001D08C1 /* PuentedelaVegaColeccionDeJuegos3.xcdatamodeld */; };
 		EE8CA9FC2CAB5D41001D08C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8CA9FB2CAB5D41001D08C1 /* Assets.xcassets */; };
 		EE8CA9FF2CAB5D41001D08C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8CA9FD2CAB5D41001D08C1 /* LaunchScreen.storyboard */; };
+		EE8CAA072CAB63BB001D08C1 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8CAA062CAB63BB001D08C1 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EE8CA9FB2CAB5D41001D08C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8CA9FE2CAB5D41001D08C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE8CAA002CAB5D42001D08C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8CAA062CAB63BB001D08C1 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				EE8CA9FD2CAB5D41001D08C1 /* LaunchScreen.storyboard */,
 				EE8CAA002CAB5D42001D08C1 /* Info.plist */,
 				EE8CA9F82CAB5D40001D08C1 /* PuentedelaVegaColeccionDeJuegos3.xcdatamodeld */,
+				EE8CAA062CAB63BB001D08C1 /* JuegosViewController.swift */,
 			);
 			path = PuentedelaVegaColeccionDeJuegos3;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8CAA072CAB63BB001D08C1 /* JuegosViewController.swift in Sources */,
 				EE8CA9F42CAB5D40001D08C1 /* ViewController.swift in Sources */,
 				EE8CA9F02CAB5D40001D08C1 /* AppDelegate.swift in Sources */,
 				EE8CA9F22CAB5D40001D08C1 /* SceneDelegate.swift in Sources */,
