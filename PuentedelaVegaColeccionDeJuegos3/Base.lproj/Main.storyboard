@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="sDB-WH-ajQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Xb-N6-cKw">
                             <connections>
-                                <segue destination="UjA-0o-f9K" kind="show" id="sxH-2X-va0"/>
+                                <segue destination="UjA-0o-f9K" kind="show" identifier="juegoSegue" id="sxH-2X-va0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,16 +73,32 @@
                                     <action selector="agregarTapped:" destination="UjA-0o-f9K" eventType="touchUpInside" id="DrQ-wt-A6R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRl-Sc-goL">
+                                <rect key="frame" x="169" y="390" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="5mD-sW-UGY" eventType="touchUpInside" id="Jtv-YL-avh"/>
+                                    <action selector="eliminarTapped:" destination="UjA-0o-f9K" eventType="touchUpInside" id="VqZ-Pr-qbe"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rk-nd-vtr">
+                                <rect key="frame" x="47" y="466" width="320" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EfZ-io-G7Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gsY-rJ-59l" firstAttribute="centerX" secondItem="RxJ-2Z-i1Y" secondAttribute="centerX" id="7ym-lZ-4M1"/>
                             <constraint firstItem="u19-QI-sHc" firstAttribute="centerX" secondItem="RxJ-2Z-i1Y" secondAttribute="centerX" id="Nzw-g3-RUK"/>
+                            <constraint firstItem="JRl-Sc-goL" firstAttribute="top" secondItem="gsY-rJ-59l" secondAttribute="bottom" constant="15" id="O3F-eX-8N1"/>
+                            <constraint firstItem="8rk-nd-vtr" firstAttribute="top" secondItem="JRl-Sc-goL" secondAttribute="bottom" constant="45" id="bBW-5t-QjS"/>
                             <constraint firstItem="dv5-mP-0r7" firstAttribute="top" secondItem="u19-QI-sHc" secondAttribute="bottom" constant="20" id="cAf-xm-UvI"/>
                             <constraint firstItem="u19-QI-sHc" firstAttribute="top" secondItem="EfZ-io-G7Z" secondAttribute="top" constant="32" id="hNS-GQ-u88"/>
                             <constraint firstItem="gsY-rJ-59l" firstAttribute="top" secondItem="dv5-mP-0r7" secondAttribute="bottom" constant="20" id="iYp-Ef-Jcb"/>
                             <constraint firstItem="dv5-mP-0r7" firstAttribute="centerX" secondItem="RxJ-2Z-i1Y" secondAttribute="centerX" id="n6R-B0-zrF"/>
+                            <constraint firstItem="8rk-nd-vtr" firstAttribute="centerX" secondItem="RxJ-2Z-i1Y" secondAttribute="centerX" id="v5T-KK-T4h"/>
+                            <constraint firstItem="JRl-Sc-goL" firstAttribute="centerX" secondItem="RxJ-2Z-i1Y" secondAttribute="centerX" id="vbI-wt-lYW"/>
                             <constraint firstItem="dv5-mP-0r7" firstAttribute="centerX" secondItem="RxJ-2Z-i1Y" secondAttribute="centerX" id="vi2-fl-jOE"/>
                             <constraint firstItem="u19-QI-sHc" firstAttribute="width" secondItem="dv5-mP-0r7" secondAttribute="width" id="ywa-cy-AHc"/>
                         </constraints>
@@ -102,11 +118,15 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="agregarActualizarBoton" destination="gsY-rJ-59l" id="ZBd-Tb-9gV"/>
+                        <outlet property="categoriaPicker" destination="8rk-nd-vtr" id="Tmn-x0-KMy"/>
+                        <outlet property="eliminarBoton" destination="JRl-Sc-goL" id="4go-O2-z67"/>
                         <outlet property="imageView" destination="u19-QI-sHc" id="xLQ-IJ-zCz"/>
                         <outlet property="tituloTextField" destination="dv5-mP-0r7" id="lhf-x6-udE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDp-3a-pY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5mD-sW-UGY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1831" y="113"/>
         </scene>
